@@ -8,8 +8,7 @@
 <body>
     <h1>New intent for my ecommerce</h1>
     {% for product in products_list%}
-    
-    {{product}}
+    <h2><a href="{% url 'products:product_detail' product.slug %}">{{product}}</a></h2>
     {%endfor%}
 </body>
 </html>
